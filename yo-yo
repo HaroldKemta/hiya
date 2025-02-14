@@ -1,0 +1,44 @@
+package Zodi;
+
+import java.util.Scanner;
+
+java.util.Scanner;
+  
+public class Zodi {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("WHAT TO KNOY YOR ZODI SIGN? ENDETER YOU BRITHDAY ");
+		
+		System.out.println("MONTH  ");
+		
+		int month ;
+		
+		month= scan.nextInt();
+		
+		if (month < 1 || month > 12) {
+			
+			System.out.println("dummy pick a correct month") ;
+		}
+		
+		
+		System.out.println("ENTER DAY  ");
+		
+		int day ;
+		
+		day = scan.nextInt();
+		
+		if( !isValidday(day)) {
+			
+			System.out.println("the daTE YOU  entered is not corrrect with month  ");
+			
+		}
+		
+		
+
+	}
+
+}
